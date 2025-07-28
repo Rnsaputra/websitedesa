@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "./style.css";
+@source "../views";
+
+@source "./../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views";
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+
+@theme {
+    --color-primary: #fe2157;
+    --color-dark: #11192c;
+    --color-secondary: oklch(0.279 0.041 260.031);
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
